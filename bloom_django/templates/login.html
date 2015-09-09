@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login to Bloom!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sign-up-box">
+        <p>login to your <a href="index.html">bloom</a> account</p>
+        <form class="sign-up-form" method="post" action="/login/">
+          {% csrf_token %} user:
+          <br />
+          <input type="text" name="username">
+          <br />
+          <br /> password:
+          <br />
+          <input type="password" name="password">
+          <br />
+          <br />
+          <input type="submit" value="Go!" style="width:30%;position:absolute;right:50px;font-size:15px;padding:5px;z-index:10">
+        </form>
+        <p class="already-have-account">Don't have an account?<a href="/signup/"> Sign up here!</a></p>
+      </div>
+    </div>
+  </body>
+
+</html>

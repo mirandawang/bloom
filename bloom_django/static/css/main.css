@@ -1,0 +1,806 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+body{
+    background-image: url("../img/contemporary_china_2.png");
+    background-repeat: repeat;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container{
+    height: 50vh;
+    margin-top: 10vh;
+}
+
+.white {
+    color: #fff;
+}
+
+.loading-icon {
+  margin-top: 100px;
+}
+
+.front-border{
+    background-image: url("../img/front-border.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.frontinfo-container{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 22%;
+}
+
+
+/* Index Page */
+
+.title-logo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.title-logo p{
+    margin: 0;
+}
+
+.title-logo img{
+    width: 300px;
+    height: auto;
+}
+
+i.mirrored{
+    color:#90b63f;
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.login {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.login i{
+    color:#90b63f;
+}
+
+.login a{
+    text-decoration: none;
+    color:#000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.login a:hover{
+    color: #ff009c;
+}
+
+
+.sign-up {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 25px;
+}
+
+.sign-up i{
+    color:#90b63f;
+}
+
+
+.sign-up a{
+    text-decoration: none;
+    color:#000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.sign-up a:hover{
+    color: #ff009c;
+}
+
+/* Sign Up Page */
+
+.sign-up-box{
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sign-up-box p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+.sign-up-box a{
+    text-decoration: none;
+    color: #ff009c;
+}
+
+.sign-up-form{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+.sign-up-form input{
+    width: 100%;
+}
+
+.sign-up-box p.already-have-account{
+    text-align: right;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    position: absolute;
+    right: 50px;
+    font-size: 15px;
+}
+
+.already-have-account a{
+    color: #000;
+    text-decoration: none;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.already-have-account a:hover{
+    color: #ff009c;
+}
+/* Log in Page is essentially the same as Sign up page*/
+
+/* Game Page */
+.game-page-container{
+}
+
+.game-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    margin-top: 15px;
+}
+
+.game-page-container .title-logo img{
+    width: 150px;
+    height: auto;
+}
+
+.container .title-logo img {
+    margin-top: 23px;
+    width: 200px;
+    height: auto;
+}
+
+#game-menu-mobile {
+    display: none;
+}
+
+.slicknav_menu {
+    display:none;
+}
+
+.game-play-container{
+    margin: 0;
+    width: 46%;
+    background-position: center;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 650px;
+    position: relative;
+}
+
+.game-menu{
+    height: 650px;
+    width: 140px;
+    background-color: #90b63f;
+    margin: 0;
+    padding: 0px 10px 0 10px;
+    overflow-y: scroll;
+}
+
+.game-menu p, .calendar p{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.game-menu i{
+    color: #fff;
+}
+
+.game-menu span{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-left: 8px;
+    position: static;
+}
+
+.game-menu img{
+    margin: 0 auto;
+    display: block;
+}
+
+.game-menu .garden{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.plant-container{
+    width: 20%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flower{
+    position: absolute;
+    bottom: 8%;
+    z-index: 0;
+    left: -35%;
+
+}
+
+.flower img{
+    width: auto;
+    height:800px;
+}
+
+.flower img.active {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.pot{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.pot img{
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.watering-can {
+    position: absolute;
+    bottom: 17px;
+    left: 150%;
+    z-index: 1;
+}
+
+.watering-can img {
+    width: 140px;
+    height: auto;
+}
+
+.watering-can img:hover {
+    -webkit-animation: tada 2s;
+    animation: tada 2s;
+}
+
+.plant-garden-image-container{
+    width:80px;
+    height: 80px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+}
+
+.plant-garden-image .pot{
+    width:30px;
+    height:auto;
+    position: absolute;
+    bottom: 0;
+    left: 23%;
+}
+
+.garden-flower{
+    width:auto;
+    position: absolute;
+    bottom: 15px;
+    left: 37%;
+    z-index: 1;
+}
+
+.calendar{
+    height: 650px;
+    width: 140px;
+    background-color:#90b63f;
+    margin: 0;
+    padding: 0px 10px 0 10px;
+}
+
+.calendar .calendar-dates .sliver-date{
+    font-size: 20px;
+    color: #fff;
+}
+
+.date-pair{
+    margin-bottom: 60px;
+}
+
+/* Welcome Page for new users */
+.welcome-container{
+    height: 50vh;
+    margin-top: 10vh;
+}
+
+
+.welcome img{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.welcome{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+.welcome p{
+    margin: 0;
+}
+
+.create-link a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #90b63f;
+}
+
+/* Plant creation page */
+.create-container{
+    height: 50vh;
+    margin-top: 8vh;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.create .logo{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.create{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+.create p{
+    margin: 0;
+}
+
+.create .subtitle{
+    font-size: 40px;
+}
+
+.bg-pick-container input{
+    padding: 10px;
+}
+
+/* Choose plant */
+.plant-pick-name{
+    font-size:30px;
+}
+
+.plant-pick-image-container{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.plant-pick-image-container .pot{
+    width: 100px;
+    height: auto;
+    left: 30%;
+}
+
+.plant-pick-image-container .flower{
+    width: 25px;
+    height: 300px;
+    left:40%;
+    bottom:15%;
+
+}
+
+/* Friends page */
+
+.friends-box{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color:#90b63f ;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.friends-box p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Hide visually and from screen readers:
+*/
+
+.hidden {
+    display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        margin-top: 0;
+    }
+
+    .front-border{
+        background-image: none;
+    }
+
+    .frontinfo-container{
+        width: 100%;
+    }
+
+    .sign-up{
+        width: 110%;
+    }
+
+    .game-play-container {
+        width: 100%;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+    .game-menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
+
+    .friends-box {
+        border-radius: 0;
+        width:100%;
+    }
+
+    .sign-up-box {
+        width: 90%;
+        height: 432px;
+    }
+
+    .plant-name-box {
+        width: 70%;
+    }
+
+    .create {
+        font-size: 35px;
+    }
+
+    .create img {
+        width: 170px;
+    }
+
+    .flower {
+        left: -117%;
+    }
+
+    .pot {
+        left: -66%;
+    }
+
+    .watering-can {
+        display: none;
+    }
+
+    .container .title-logo img {
+        width: 150px;
+    }
+}
+
+@media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+http://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+        http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+    * Printing Tables:
+    * http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

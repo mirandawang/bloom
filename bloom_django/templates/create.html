@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Bloom - Create a plant </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="../static/img/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/image-picker.css">
+</head>
+
+<body>
+  <div class="create-container">
+    <div class="create">
+      <p class="title animated fadeInDown">Make your habits
+        <a href="index.html">
+          <img class="logo" src="/static/img/bloom.png" />
+        </a>
+      </p>
+      <img class="loading-icon" src="/static/img/loader.gif" style="width:50px;height:50px;" />
+      <div class="plant-pick" style="display:none">
+        <p class="subtitle"> Pick your plant: </p>
+
+        <div class="plant-pick-container flex-center">
+          <select id="plant-pick">
+            <option value=""></option>
+            {% for pt in plant_types %}
+            <option value="{{ pt.name }}" name="flower" type="image" data-img-src="/media/{{ pt.piece_image }}" alt="{{ pt.name }}"></option>
+            {% endfor %}
+          </select>
+        </div>
+        <input class="plant-pick-next" type="button" value="Next" style="font-size:15px;padding:5px;">
+      </div>
+      <div class="name-pick" style="display:none">
+        <p class="subtitle"> Name your plant: </p>
+        <input class="plant-name-box" type="text" name="plant-name-box">
+        <br />
+        <input class="name-pick-next" type="button" value="Go!" style="font-size:15px;padding:5px;">
+      </div>
+      <div class="pot-pick" style="display:none">
+      <p class="subtitle"> Choose a pot design: </p>
+      <div class="flex-center">
+        <select id="pot-pick">
+          <option value=""></option>
+          {% for p in pots %}
+          <option value="{{ p.name }}" name="pot" type="image" data-img-src="/media/{{ p.image }}"
+                  alt="{{ p.name }}"></option>
+          {% endfor %}
+        </select>
+      </div>
+        <input class="pot-pick-next" type="button" value="Next" style="font-size:15px;padding:5px;">
+    </div>
+
+      <div class="bg-pick" style="display:none">
+        <p class="subtitle"> Pick your background: </p>
+        <div class="bg-pick-container flex-center">
+          <select id="bg-pick">
+            <option value=""></option>
+            {% for bg in backgrounds %}
+            <option value="{{ bg.background_name }}" type="image" data-img-src="/media/{{ bg.promo_image }}" alt="{{ bg.name }}"></option>
+            {% endfor %}
+          </select>
+        </div>
+        <input class="bg-pick-next" type="button" value="Finish" style="font-size:15px;padding:5px;">
+      </div>
+      <div class="ready-to-play" style="display:none">
+        <p style="color:#ff009c;">You're all set! Ready to play? </p>
+        <a href="/play/" style="font-size:25px;text-decoration:none;color:#90b63f;">Take me to the game! -></a>
+      </div>
+    </div>
+
+  </div>
+  <script src="/static/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="/static/js/image-picker.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/create-plant.js"></script>
+</body>
+
+</html>
